@@ -1,0 +1,96 @@
+.product-card {
+    width: 270px; /* Подберите под макет */
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+  
+    /* Включаем flex-колонку, чтобы можно было "прижать" нижний блок */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Верхняя часть карточки (изображение, категория, заголовок и т.д.) */
+  .product-card__content {
+    /* Позволяет контенту "расти" и выталкивать нижний блок вниз */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 12px;
+  }
+  
+  .product-card__category {
+    color: #4460f7; /* Синий текст категории */
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .product-card__title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  
+  /* Нижняя полоса (цена и кнопка/блок) */
+  .product-card__bottom-row {
+    /* Необязательно, но можно:
+       display: flex;
+       justify-content: space-between; 
+       align-items: center;
+       чтобы цена была слева, а кнопка/блок -/+ справа */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px; /* Отступ сверху, если нужно */
+  }
+  
+  /* Цена */
+  .product-card__price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Кнопка "Add to cart" — синяя заливка, белый текст */
+  .product-card__add-button {
+    background-color: #4460f7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .product-card__add-button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Блок "- 1 +" */
+  .product-card__quantity-block {
+    display: flex;
+    align-items: center;
+    border: 1px solid #4460f7;
+    border-radius: 8px;
+    padding: 5px 16px;
+    gap:10px;
+  }
+  
+  .quantity-block__btn {
+    background: none;
+    border: none;
+    color: #4460f7;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .quantity-block__number {
+    font-size: 14px;
+    color: #4460f7;
+  }
+  

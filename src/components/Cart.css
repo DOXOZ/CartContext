@@ -1,0 +1,35 @@
+.cart {
+    margin-top: 32px;
+  }
+  
+  .cart-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+  }
+  
+  /* Подвал корзины: итоговая сумма и кнопка очистки */
+  .cart-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .cart-total {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .cart-clear {
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  .cart-clear:hover {
+    opacity: 0.9;
+  }
+  

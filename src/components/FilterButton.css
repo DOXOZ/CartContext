@@ -1,0 +1,28 @@
+.filter-buttons-wrapper {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  /* Общий стиль кнопок фильтра */
+  .filter-button {
+    padding: 8px 16px;
+    border: 1px solid #4460f7; /* синий цвет рамки */
+    background-color: #fff;    /* белый фон */
+    color: #4460f7;           /* синий текст */
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* При наведении можно слегка затемнить */
+  .filter-button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Активная кнопка — синяя заливка, белый текст */
+  .filter-button.active {
+    background-color: #4460f7;
+    color: #fff;
+  }
+  
